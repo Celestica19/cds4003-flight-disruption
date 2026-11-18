@@ -1,0 +1,7 @@
+{
+  "original_archive": "Supplied by the user; archive SHA256 in download_manifest.json",
+  "flight_csv": "Imported successfully; original file kept unchanged",
+  "official_airport_crosswalk": "Request to BTS official support-table archive returned HTTP 403; no crosswalk guessed",
+  "streamlit_installation": "Installation attempt failed because no streamlit distribution was accessible in this environment",
+  "implication": "Inference code and inputs can be tested; actual Streamlit UI and public deployment remain unverified"
+}
