@@ -1,0 +1,68 @@
+{
+  "status": "TRAINED_REAL_DATA",
+  "selected_model": "hist_gradient_boosting",
+  "selected": {
+    "n": 947202,
+    "prevalence": 0.19263156116646712,
+    "average_precision": 0.2663304744222081,
+    "roc_auc": 0.6170949154942871,
+    "brier_score": 0.15257185805524776,
+    "log_loss": 0.4794651275488444,
+    "threshold": 0.32787811995956606,
+    "alert_rate": 0.12187157544008564,
+    "precision": 0.302173479906789,
+    "recall": 0.19117510043242117,
+    "f1": 0.23418754070185097,
+    "tn": 684186,
+    "fp": 80555,
+    "fn": 147579,
+    "tp": 34882,
+    "rank_budget": 0.1,
+    "precision_at_budget": 0.3089210304054054,
+    "recall_at_budget": 0.1603685171077655,
+    "lift_at_budget": 1.6036885572372224,
+    "scenario_cost_per_1000": 864.0712329577007,
+    "day_cluster_bootstrap_95_percent_intervals": {
+      "precision": {
+        "lower": 0.2697640346721743,
+        "upper": 0.33643150071364614
+      },
+      "recall": {
+        "lower": 0.1701369354758561,
+        "upper": 0.20952043702997952
+      },
+      "scenario_cost_per_1000": {
+        "lower": 788.4000098020782,
+        "upper": 941.2953709441422
+      }
+    }
+  },
+  "baseline": {
+    "n": 947202,
+    "prevalence": 0.19263156116646712,
+    "average_precision": 0.19263156116646712,
+    "roc_auc": 0.5,
+    "brier_score": 0.1562768550271647,
+    "log_loss": 0.49227791582056335,
+    "threshold": 0.2200580486945474,
+    "alert_rate": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tn": 764741,
+    "fp": 0,
+    "fn": 182461,
+    "tp": 0,
+    "rank_budget": 0.1,
+    "precision_at_budget": 0.1919657939189189,
+    "recall_at_budget": 0.09965417267251632,
+    "lift_at_budget": 0.9965438309095523,
+    "scenario_cost_per_1000": 963.1578058323356
+  },
+  "test_date_min": "2015-11-01",
+  "test_date_max": "2015-12-31",
+  "notes": [
+    "Test set used once for final assessment, not model selection.",
+    "Bootstrap resamples dates, conditional on the fitted model; it does not include training uncertainty."
+  ]
+}

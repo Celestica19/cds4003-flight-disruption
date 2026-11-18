@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "01_missingness.png",
+    "caption": "All rows profiled. Raw and eligible-row denominators differ. Structural missing values are retained; predictor imputation occurs later inside training folds."
+  },
+  {
+    "filename": "02_airline_rates.png",
+    "caption": "All training rows; cancellations, diversions and arrivals at least 15 minutes late form the outcome. Differences are descriptive and not causal airline rankings."
+  },
+  {
+    "filename": "03_departure_hour.png",
+    "caption": "All training rows with valid scheduled departure time. A time association may also reflect route mix, weather or accumulated delays."
+  },
+  {
+    "filename": "04_daily_pattern.png",
+    "caption": "Exact training-period aggregates. The rolling line uses only the preceding seven dates and is descriptive, not a model input."
+  },
+  {
+    "filename": "05_arrival_delay.png",
+    "caption": "Uniform hash sample of 100,000 training rows. Display restricted to \u221260 through 300 minutes; 194 nonmissing observations outside that range remain in the data. Missing arrival outcomes are omitted from this histogram."
+  },
+  {
+    "filename": "06_precision_recall.png",
+    "caption": "November\u2013December holdout, after model and threshold freezing. Average precision is reported separately; it is not trapezoidal PR area."
+  },
+  {
+    "filename": "07_roc.png",
+    "caption": "Read alongside precision\u2013recall and the observed class prevalence."
+  },
+  {
+    "filename": "08_confusion_matrix.png",
+    "caption": "Threshold chosen from validation scores to respect the validation workload budget; test workload can differ."
+  },
+  {
+    "filename": "09_calibration.png",
+    "caption": "Quantile-bin calibration diagnostic; few unique scores may produce fewer than ten points. No claim of calibrated probabilities is assumed."
+  },
+  {
+    "filename": "10_feature_importance.png",
+    "caption": "Validation sample, three repeats. Correlated features may share importance. This is a global predictive association, not a causal or flight-specific explanation."
+  }
+]

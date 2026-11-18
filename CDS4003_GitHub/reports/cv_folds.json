@@ -1,0 +1,29 @@
+[
+  {
+    "fold": 1,
+    "train_rows": 42330,
+    "validation_rows": 14929,
+    "train_start": "2015-01-01",
+    "train_end": "2015-03-29",
+    "validation_start": "2015-04-01",
+    "validation_end": "2015-04-30"
+  },
+  {
+    "fold": 2,
+    "train_rows": 72814,
+    "validation_rows": 15619,
+    "train_start": "2015-01-01",
+    "train_end": "2015-05-29",
+    "validation_start": "2015-06-01",
+    "validation_end": "2015-06-30"
+  },
+  {
+    "fold": 3,
+    "train_rows": 104329,
+    "validation_rows": 14681,
+    "train_start": "2015-01-01",
+    "train_end": "2015-07-29",
+    "validation_start": "2015-08-01",
+    "validation_end": "2015-08-29"
+  }
+]
