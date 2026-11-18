@@ -1,7 +1,0 @@
-feature,training_rows,missing_before,missing_after_fitted_imputer,training_median
-dep_minute,3888115,0,0,805.0
-arr_minute,3888115,0,0,920.0
-distance,3888115,0,0,649.0
-scheduled_minutes,3888115,6,0,122.0
-month,3888115,0,0,5.0
-weekday,3888115,0,0,3.0
