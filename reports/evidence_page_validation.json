@@ -1,8 +1,0 @@
-{
-  "static_html_validation": "passed",
-  "valid_embedded_pngs": 10,
-  "tables": 10,
-  "external_scripts": 0,
-  "figure_visual_review": "all ten chart images inspected",
-  "browser_render_validation": "blocked by sandbox socket restrictions; not claimed"
-}
