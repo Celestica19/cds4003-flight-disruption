@@ -1,0 +1,5 @@
+column,sample_n,q1,q3,lower_fence,upper_fence,flagged_n,decision
+DISTANCE,100000,373.0,1060.25,-657.875,2091.125,6023,"Retain domain-valid extremes; review IQR flags, do not automatically remove"
+SCHEDULED_TIME,99999,85.0,173.0,-47.0,305.0,5110,"Retain domain-valid extremes; review IQR flags, do not automatically remove"
+ARRIVAL_DELAY,97880,-13.0,10.0,-47.5,44.5,8593,"Retain domain-valid extremes; review IQR flags, do not automatically remove"
+DEPARTURE_DELAY,98191,-5.0,9.0,-26.0,30.0,12197,"Retain domain-valid extremes; review IQR flags, do not automatically remove"

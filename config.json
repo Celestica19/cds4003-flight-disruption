@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "expected_year": 2015,
+  "minimum_raw_rows_exclusive": 300000,
+  "minimum_raw_columns": 20,
+  "chunk_size": 100000,
+  "validation_start": "2015-09-01",
+  "test_start": "2015-11-01",
+  "embargo_days": 2,
+  "max_train_rows": null,
+  "tuning_rows": 120000,
+  "max_validation_rows": null,
+  "max_test_rows": null,
+  "eda_sample_rows": 100000,
+  "search_iterations": 6,
+  "parallel_jobs": 2,
+  "alert_budget": 0.10,
+  "false_positive_cost": 1.0,
+  "false_negative_cost": 5.0,
+  "bootstrap_repetitions": 200
+}

@@ -1,0 +1,13 @@
+{
+  "tested_at_utc": "2026-11-18T17:08:15.560717+00:00",
+  "python": "3.12.14",
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "scope": "Unit tests and temporary-fixture integration tests; see separate real-data validation records",
+  "real_data_execution": true,
+  "streamlit_runtime_tested": false,
+  "python_syntax_files": 22,
+  "notebook_code_cells_syntax_checked": 17
+}
