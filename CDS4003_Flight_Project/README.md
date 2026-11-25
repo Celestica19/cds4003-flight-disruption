@@ -1,0 +1,64 @@
+# Flight Disruption Prediction (CDS 4003)
+
+**Live app:** https://cds4003-flight-disruption-npatkr4rrtvz5rg79napp9q.streamlit.app/
+**GitHub:** https://github.com/Celestica19/cds4003-flight-disruption
+
+## Team and roles
+| Name | ID | GitHub | Role |
+|---|---|---|---|
+| Salem Marwan Alebri | H00472169 | Celestica19 | Data cleaning, EDA, models |
+| Ebrahim Abdulaziz Mohamed Ibrahim Almarzouqi | H00442189 | brhowm2will-jpg | Streamlit app, deployment |
+
+## Business problem
+Flight delays and cancellations give airline support staff extra work. We predict from the planned schedule if a flight will be **disrupted** (cancelled, diverted or 15+ minutes late), so staff can check risky flights early. We compare two models and choose the one with the better F1 score.
+
+## Dataset
+- **Source:** [2015 Flight Delays and Cancellations, US DOT (Kaggle)](https://www.kaggle.com/datasets/usdot/flight-delays)
+- **Licence:** CC0 Public Domain
+- **Size:** full `flights.csv` has 5,819,079 rows and 31 columns. It is too big for GitHub (590 MB), so `data/flights.csv.gz` is a random sample of 250,000 rows with all 31 columns (code for the sample is in the notebook).
+- **How to get the full file:** download the zip from the Kaggle link above.
+
+**Dataset search:**
+| Dataset | Site | Decision |
+|---|---|---|
+| 2015 Flight Delays and Cancellations | Kaggle | Chosen: large, 31 columns, clear target |
+| Online Retail II | UCI | Rejected: only 8 columns |
+| NYC 311 Service Requests | NYC Open Data | Rejected: no clear target for our problem |
+
+**Main columns used:**
+| Column | Meaning |
+|---|---|
+| AIRLINE | Airline code |
+| MONTH, DAY_OF_WEEK | Date of the flight |
+| SCHEDULED_DEPARTURE | Planned departure time (HHMM) |
+| DISTANCE | Distance in miles |
+| SCHEDULED_TIME | Planned flight time in minutes |
+| ARRIVAL_DELAY, CANCELLED, DIVERTED | Used only to make the target `DISRUPTED` |
+
+## Folder structure
+```
+Flight_Project.ipynb   all the work in one notebook (cleaning, EDA, models, tuning)
+data/                  250,000-row sample of the Kaggle data
+models/                saved model (model.joblib)
+app/                   Streamlit app (streamlit_app.py)
+requirements.txt       Python packages
+```
+
+## How to run
+```
+pip install -r requirements.txt
+pip install notebook
+jupyter notebook Flight_Project.ipynb      (Run All)
+streamlit run app/streamlit_app.py
+```
+
+## Results
+| Model | Best setting | Cross-validation F1 |
+|---|---|---|
+| Logistic regression | C = 0.1 | 0.369 |
+| Decision tree | max_depth = 8 | **0.380** |
+
+The decision tree was chosen. On the 20% test set: accuracy 0.565, precision 0.268, recall 0.676, F1 0.384. It finds about 68 of every 100 disrupted flights, but about 3 of every 4 alerts are false. The model uses 2015 data and no weather, so it is a class example only.
+
+## AI use
+ChatGPT and Claude were used to help write and fix the Python code and the Streamlit app.
