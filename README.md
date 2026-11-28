@@ -7,7 +7,7 @@
 | Name | ID | GitHub | Role |
 |---|---|---|---|
 | Salem Marwan Alebri | H00472169 | Celestica19 | Data cleaning, EDA, models |
-| Ebrahim Abdulaziz Mohamed Ibrahim Almarzouqi | H00442189 | brhowm2will-jpg | Streamlit app, deployment |
+| Ebrahim Abdulaziz Mohamed Ibrahim Almarzouqi | H00442189 | brhowm2will-jpg | Streamlit app, deployment | Auditing
 
 ## Business problem
 Flight delays and cancellations give airline support staff extra work. We predict from the planned schedule if a flight will be **disrupted** (cancelled, diverted or 15+ minutes late), so staff can check risky flights early. We compare two models and choose the one with the better F1 score.
