@@ -3,7 +3,7 @@
 **Live app:** https://cds4003-flight-disruption-cpyrlyk54gga4pgmrcwvcj.streamlit.app/
 **GitHub:** https://github.com/Celestica19/cds4003-flight-disruption
 
-## Team and roles
+## Team and roles 
 | Name | ID | GitHub | Role |
 |---|---|---|---|
 | Salem Marwan Alebri | H00472169 | Celestica19 | Data cleaning, EDA, models |
